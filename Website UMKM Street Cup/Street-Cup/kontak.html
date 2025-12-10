@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Profil UMKM - Street Cup</title>
+</head>
+<body>
+  <header>
+    <h1>Street Cup</h1>
+    <p>Ngopi Gak Harus Ribet</p>
+    <nav>
+      <ul>
+        <li><a href="beranda.html">Beranda</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+    <body>
+      <div class="judul-kontak">
+        <h2> Kontak Street Cup</h2>
+      </div>
+        <form> 
+            <label for="nama">Nama : </label><br>
+            <input type="text" id="nama"><br>
+
+            <label for = "email">Email : </label><br>
+            <input type="text" id="email"><br><br>
+
+            <label for="phone">Nomor HP:</label>
+           <input type="text" id="phone" name="phone" required pattern="\d+" title="Masukkan hanya angka" />
+
+            <label for="tanggal"> Tanggal pengiriman</label><br>
+            <input type="date" id="tanggal" name="tanggal"><br><br>
+
+            <label for="kategori">Kategori:</label><br>
+                <select id="kategori" name="kategori" required>
+                    <option value="">--Pilih Kategori--</option>
+                    <option value="saran">Saran</option>
+                    <option value="kritik">Kritik</option>
+                    <option value="pertanyaan">Pertanyaan</option>
+                </select><br><br>
+
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan" rows="4" cols="50" required></textarea><br><br>
+
+
+
+            <label for="upfile"> Upload File/Gambar</label><br>
+            <input type="file" id="upfile" name="upfile"> <br><br>
+
+            <label for="setuju">
+            <p>Saya menyetujui syarat dan ketentuan</p>
+            <input type="checkbox" id="setuju" name="setuju" required> 
+
+            </label><br><br>
+
+            <button type="submit">Kirim</button>
+            <button type="rsest">Clear</button>
+
+            <div id="feedback" class="hidden"></div>
+
+        </form>
+      <footer>
+        <p>&copy; 2025 Street Cup. Semua hak dilindungi.</p>
+      </footer>
+     
+    </body>
+</html> 
